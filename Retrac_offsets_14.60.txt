@@ -1,0 +1,111 @@
+[*] pid=15212
+[*] packed module base = 0x7FF64DE70000
+[*] locating unpacked image...
+[*] unpacked image base = 0x366B42DD0000
+--- globals ---
+[+] GObjects struct @ 0x366B4C1B0A40: objects=0x210EE8C7900 max=2162688 num=296572 maxchunks=33 numchunks=5
+[+] UWorld = 0x210D02E0000
+--- offsets (SDK 14.60, relative to unpacked base 0x366B42DD0000) ---
+    UWorld                                   = 0x951B9D0
+    GameState                                = 0x0120
+    AcknowledgedPawn                         = 0x0250
+    PlayerArray                              = 0x0238
+    OwningGameInstance                       = 0x0180
+    LocalPlayers                             = 0x0038
+    PlayerController                         = 0x0030
+    PlayerState                              = 0x0228
+    RootComponent                            = 0x0130
+    PawnPrivate                              = 0x0280
+    Mesh                                     = 0x0280
+    Nettconection                            = 0x0418
+    BoneArray                                = 0x0720
+    BoneCache                                = 0x0730
+    bIsDBNO                                  = 0x07D2
+    bIsDying                                 = 0x0552
+    children                                 = 0x0120
+    ComponentToWorld                         = 0x01C0
+    Realitivelocation                        = 0x011C
+    RelativeRotation                         = 0x0128
+    playercameramanager                      = 0x02B8
+    ControlRotation                          = 0x0288
+    camera_cache_private                     = 0x1AA0
+    GlobalAnimRateScale                      = 0x0770
+    bIsReloadingWeapon                       = 0x02B1
+    LastFireTime                             = 0x08EC
+    LastFireTimeVerified                     = 0x08F0
+    CurrentWeapon                            = 0x05C0
+    WeaponData                               = 0x0378
+    AmmoCount                                = 0x0964
+    ClipSize                                 = 0x0968
+    Playername                               = 0x0300
+    Platform                                 = 0x03A8
+    Rarity                                   = 0x0050
+    ItemName                                 = 0x0070
+    FLength                                  = 0x0030
+    FData                                    = 0x0028
+    TriggerType                              = 0x09DC
+    CharacterMovement                        = 0x0288
+    MovementMode                             = 0x0168
+    BrakingDecelerationFlying                = 0x01C0
+    LastUpdateLocation                       = 0x0250
+    LastUpdateVelocity                       = 0x025C
+    GravityScale                             = 0x0150
+    MaxFlySpeed                              = 0x0198
+    BuildingState                            = 0x11A8
+    TargetSource                             = 0x08F8
+    WhileCrouched                            = 0x0904
+    WhileTargeting                           = 0x0910
+    LocationUnderReticle                     = 0x1E90
+    TeamIndex                                = 0x0E88
+    KillScore                                = 0x0E9C
+    SeasonLevel                              = 0x0E98
+    ViewPitchMin                             = 0x2784
+    ViewPitchMax                             = 0x2788
+    ViewYawMin                               = 0x278C
+    ViewYawMax                               = 0x2790
+    SkeletalMeshes                           = 0x37E0
+    bRenderCustomDepth                       = 0x0216
+    CustomDepthStencilValue                  = 0x021C
+    Levels                                   = 0x0138
+    PersistentLevel                          = 0x0030
+    ActorsArray                              = 0x0098
+    ActorsCount                              = 0x00A0
+    LoadedLevel                              = 0x0128
+    PrimaryPickupItemEntry                   = 0x02A8
+    ItemDefinition                           = 0x0018
+    DisplayName                              = 0x0070
+    bPickedUp                                = 0x04E0
+    bAlreadySearched                         = 0x0C71
+    ReplicatedLootTier                       = 0x0BFC
+    CurrentVehicle                           = 0x2178
+    VehicleCachedSpeed                       = 0x09A4
+    VehicleAttributes                        = 0x0C90
+    ItemRarity                               = 0x0050
+    LootNoiseRange                           = 0x0C20
+    HighestRarity                            = 0x0C70
+    SearchText                               = 0x0C98
+    HealthSet                                = 0x0C30
+    CurrentHealth                            = 0x0034
+    MaxHealth                                = 0x005C
+    CurrentShield                            = 0x0084
+    MaxShield                                = 0x00AC
+    TargetingSpeed                           = 0x09F4
+    TargetingFOV                             = 0x09F8
+    WeaponCore                               = 0x0370
+    WeaponCoreData                           = 0x0380
+    DefaultFOV                               = 0x02B4
+--- live chain verification ---
+[+] World -> PersistentLevel = 0x210CB5B1BC0
+[+] World -> OwningGameInstance = 0x210C98D5A40
+[+] Level -> Actors = 0x210D39EBB90 (count=145)
+[+] GameInstance -> LocalPlayers = 0x210C4728CD0 (count=1)
+[+] LocalPlayers[0] = 0x210DB51B5A0
+[+] LocalPlayer -> PlayerController = 0x210C68B6DC0
+[+] PlayerController -> PlayerCameraManager = 0x210E22F0010
+[+]   POV.Location  = (52.3, 125912.7, 89.2)
+[+]   POV.Rotation  = (Pitch 0.9, Yaw -88.1, Roll 0.0)
+[+]   POV.FOV       = 52.0
+[+] camera chain structurally OK (FOV sane)
+[+] PlayerController -> Pawn = 0x0
+[+] Pawn->PlayerState = 0x0  PC->PlayerState = 0x210C94D1640  (no possessed pawn - lobby/spectating)
+[+] Local PlayerState.Name = 'pn`b`n`c_tl_m]bj410*^5-225' (len=27)
